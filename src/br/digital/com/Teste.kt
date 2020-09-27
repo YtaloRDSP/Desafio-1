@@ -8,21 +8,13 @@ fun main(){
 
     val a1 = Aluno("Ytalo", "Ribeiro", Integer(1123))
     val a2 = Aluno("Roberto", "Carlos", Integer(1178))
-    val c1 = Curso("Geografia", Integer(123), p1, p2, Integer(20), a1, a2)
+    val c1 = Curso("Geografia", Integer(123), p1, p2, 20, a1, a2)
 
     val m1 = Matricula(a1, c1)
     val m2 = Matricula(a2, c1)
 
     val gerente = DigitalHouseManager()
-    gerente.run {
-        addAluno(a1,a2)
-        addProf(p1, p2)
-        addCurso(c1)
-        addMatricula(m1, m2)
-
-        for(item in listaAl) println(item.nome)
-        for(item in listaProf) println(item.nome)
-        for(item in listaCurso) println(item.nome)
-        for(item in listaMatricula) println(item.aluno)
-    }
+    val a3 = Aluno("Frank", "Sinatra", Integer(937))
+    c1.excluirAluno(a3)
+    for(item in c1.listaAluno) println(item.nome)
 }

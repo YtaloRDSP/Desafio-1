@@ -6,18 +6,16 @@ class DigitalHouseManager {
     val listaCurso = mutableListOf<Curso>()
     val listaMatricula = mutableListOf<Matricula>()
 
-    fun addAluno(vararg lista: Aluno){
-        listaAl.addAll(lista)
-    }
-    fun addProf(vararg lista: Professor){
-        listaProf.addAll(lista)
-    }
-    fun addCurso(vararg lista: Curso){
-        listaCurso.addAll(lista)
-    }
-    fun addMatricula(vararg lista: Matricula){
-        listaMatricula.addAll(lista)
-    }
-
-
+//    fun addAluno(vararg lista: Aluno){
+//        listaAl.addAll(lista)
+//    }
+//    fun addProf(vararg lista: Professor){
+//        listaProf.addAll(lista)
+//    }
+//    fun addCurso(vararg lista: Curso){
+//        listaCurso.addAll(lista)
+//    }
+//    fun addMatricula(vararg lista: Matricula){
+//        listaMatricula.addAll(lista)
+//    }
 }
