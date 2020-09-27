@@ -9,7 +9,10 @@ fun main(){
     val a1 = Aluno("Ytalo", "Ribeiro", Integer(1123))
     val a2 = Aluno("Roberto", "Carlos", Integer(1178))
     val c1 = Curso("Geografia", Integer(123), p1, p2, Integer(20), a1, a2)
-    c1.lista.forEach { println(it.nome)}
-    println(c1.profTitular.nome)
-    println(c1.profAdjunto.nome)
+
+    val m1 = Matricula(a1, c1)
+    println(m1.aluno.nome)
+    println(m1.curso.nome)
+    println(m1.data)
+
 }
