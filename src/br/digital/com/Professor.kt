@@ -1,7 +1,7 @@
 package br.digital.com
 
 //Parte D - Classe alterada para ser herdada pelas classes de Professor Titular e Adjunto
-abstract class Professor(val nome: String,
+open class Professor(val nome: String,
                      val sobrenome: String,
                      val codigoDeProfessor: Int) {
     val tempoDeCasa = 0

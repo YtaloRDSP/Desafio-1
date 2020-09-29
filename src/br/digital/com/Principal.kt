@@ -2,7 +2,7 @@ package br.digital.com
 
 fun main(){
     val gerente = DigitalHouseManager()
-    
+
     gerente.registrarProfessorTitular("Dário", "Clóvis", 7846, "Kotlin")
     gerente.registrarProfessorTitular("Ocineide", "Ribeiro", 8471, "Ruby")
     gerente.registrarProfessorAdjunto("Rebecca", "Oliveira", 9785, 10)
