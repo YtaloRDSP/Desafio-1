@@ -109,4 +109,15 @@ class DigitalHouseManager {
             }
         }
     }
+
+    fun consultarMatricula(codigoAluno: Int){
+        var c = 0
+        listaMatricula.forEach{
+            if(codigoAluno.equals(it.aluno.codigoDeAluno)){
+                println("Aluno(a) ${it.aluno.nome} está matriculado(a) no curso ${it.curso.nome}")
+                c++
+            }
+        }
+        if(c == 0) println("Aluno(a) não está matriculado(a) em nenhum curso.")
+    }
 }

@@ -19,11 +19,14 @@ fun main(){
     gerente.matricularAluno("Robson", "Peres", 20190654)
     gerente.matricularAluno("Thaysa", "Maria", 20200945)
 
-    gerente.matricularAluno(20200530, 20001)
     gerente.matricularAluno(20190487, 20001)
+    gerente.matricularAluno(20190654, 20001)
 
     gerente.matricularAluno(20190654, 20002)
     gerente.matricularAluno(20200945, 20002)
     gerente.matricularAluno(20200530, 20002)
 
+    gerente.consultarMatricula(20190654)
+    gerente.consultarMatricula(20200945)
+    gerente.consultarMatricula(20200530)
 }
