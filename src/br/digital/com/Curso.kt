@@ -1,12 +1,19 @@
 package br.digital.com
 
 class Curso(val nome: String,
-                 val codigoDeCurso: Integer, 
-                 val profTitular: ProfTitular, 
-                 val profAdjunto: ProfAdjunto, 
-                 val maxAlunos: Int,
-                 vararg val lista: Aluno) {
-    val listaAluno = mutableListOf<Aluno>(*lista)
+                 val codigoDeCurso: Int,
+                 val maxAlunos: Int) {
+
+    lateinit var profTitular: ProfTitular
+    fun addProfTitular(profT: ProfTitular){
+        profTitular = profT
+    }
+    lateinit var profAdjunto: ProfAdjunto
+    fun addProfAdjunto(profA: ProfAdjunto){
+        profAdjunto = profA
+    }
+
+    val listaAluno = mutableListOf<Aluno>()
     override fun equals(other: Any?): Boolean {
         if(other !is Curso) return false
         if(codigoDeCurso != other.codigoDeCurso) return false
